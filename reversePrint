@@ -1,0 +1,17 @@
+Given a pointer to the head of a singly-linked list, print each data value from the reversed list. If the given list is empty, do not print anything.
+
+Code: 
+
+    def reversePrint(llist):
+    if llist is None:
+        return
+    else:
+        out = []
+        temp = llist
+        
+        while temp is not None:
+            out.append(temp.data)
+            temp = temp.next
+            
+        print("\n".join(map(str, out[::-1])))
+    
