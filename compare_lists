@@ -1,0 +1,19 @@
+You’re given the pointer to the head nodes of two linked lists. Compare the data in the nodes of the linked lists to check if they are equal. If all data attributes are equal and the lists are the same length, return . Otherwise, 1 return 0.
+
+Code :
+
+      def compare_lists(llist1, llist2):
+    temp1 = llist1
+    temp2 = llist2
+    if(temp1 == 0) or (temp2 == 0):
+        return None
+    while temp1 is not None and temp2 is not None:
+        if temp1.data != temp2.data:
+            return 0
+        temp1 = temp1.next
+        temp2 = temp2.next
+        
+    if temp1 is None and temp2 is None:
+        return 1
+    else:
+        return 0
