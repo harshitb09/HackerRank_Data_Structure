@@ -2,7 +2,7 @@ You’re given the pointer to the head nodes of two linked lists. Compare the da
 
 Code :
 
-      def compare_lists(llist1, llist2):
+    def compare_lists(llist1, llist2):
     temp1 = llist1
     temp2 = llist2
     if(temp1 == 0) or (temp2 == 0):
